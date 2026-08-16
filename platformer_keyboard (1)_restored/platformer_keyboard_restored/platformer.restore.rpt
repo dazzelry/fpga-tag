@@ -1,0 +1,93 @@
+Restore Archived Project report for platformer
+Fri Aug 14 11:09:16 2026
+Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Fri Aug 14 11:09:16 2026 ;
+; Revision Name                   ; platformer                            ;
+; Top-level Entity Name           ; top                                   ;
+; Family                          ; Cyclone V                             ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'D:/Downloads/Project_VGA_start_restored/platformer_keyboard (1).qar' into the 'D:/Downloads/Project_VGA_start_restored/platformer_keyboard (1)_restored/' directory
+Info: Generated report 'platformer.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/23.1std/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 21 warnings
+    Info: Peak virtual memory: 4851 megabytes
+    Info: Processing ended: Fri Aug 14 11:09:16 2026
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++----------------+
+; Files Restored ;
++----------------+
+; File Name      ;
++----------------+
+
+
++-----------------------------------------------------------------------+
+; Files Not Restored                                                    ;
++-----------------------------------------------------------------------+
+; File Name                                                             ;
++-----------------------------------------------------------------------+
+; qar_info.json                                                         ;
+; VGA_TAG/blue_rom_b.v                                                  ;
+; VGA_TAG/blue_rom_g.v                                                  ;
+; VGA_TAG/blue_rom_r.v                                                  ;
+; VGA_TAG/red_rom_b.v                                                   ;
+; VGA_TAG/red_rom_g.v                                                   ;
+; VGA_TAG/red_rom_r.v                                                   ;
+; platformer_keyboard_restored/assignment_defaults.qdf                  ;
+; platformer_keyboard_restored/clock_generator.qip                      ;
+; platformer_keyboard_restored/clock_generator.v                        ;
+; platformer_keyboard_restored/clock_generator/clock_generator_0002.qip ;
+; platformer_keyboard_restored/clock_generator/clock_generator_0002.v   ;
+; platformer_keyboard_restored/pattern_generator.sv                     ;
+; platformer_keyboard_restored/platformer.qsf                           ;
+; platformer_keyboard_restored/platformer.sdc                           ;
+; platformer_keyboard_restored/platformer_keyboard.qpf                  ;
+; platformer_keyboard_restored/ps2_arrows.sv                            ;
+; platformer_keyboard_restored/top.sv                                   ;
+; platformer_keyboard_restored/vga_controller.sv                        ;
++-----------------------------------------------------------------------+
+
+

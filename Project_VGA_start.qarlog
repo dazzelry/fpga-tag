@@ -1,0 +1,25 @@
+Quartus Prime Archive log --	D:/Downloads/Project_VGA_start_restored/Project_VGA_start.qarlog
+
+Archive:	D:/Downloads/Project_VGA_start_restored/Project_VGA_start.qar
+Date:		Wed Aug 12 10:07:55 2026
+Quartus Prime		23.1std.0 Build 991 11/28/2023 SC Lite Edition
+
+	=========== Files Selected: ===========
+D:/Downloads/Project_VGA_start_restored/Project_VGA.qsf
+D:/Downloads/Project_VGA_start_restored/Project_VGA_start.qpf
+D:/Downloads/Project_VGA_start_restored/assignment_defaults.qdf
+D:/Downloads/Project_VGA_start_restored/clock_generator.cmp
+D:/Downloads/Project_VGA_start_restored/clock_generator.qip
+D:/Downloads/Project_VGA_start_restored/clock_generator.sip
+D:/Downloads/Project_VGA_start_restored/clock_generator.spd
+D:/Downloads/Project_VGA_start_restored/clock_generator.v
+D:/Downloads/Project_VGA_start_restored/clock_generator/clock_generator_0002.qip
+D:/Downloads/Project_VGA_start_restored/clock_generator/clock_generator_0002.v
+D:/Downloads/Project_VGA_start_restored/clock_generator_sim/clock_generator.vo
+D:/Downloads/Project_VGA_start_restored/tb_VGA.sv
+D:/Downloads/Project_VGA_start_restored/top.sv
+D:/Downloads/Project_VGA_start_restored/vga_controller.sv
+	======= Total: 14 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

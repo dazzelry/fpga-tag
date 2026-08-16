@@ -1,0 +1,118 @@
+module pattern_generator(
+  input  logic   vga_clock,
+  input  logic   reset_n,
+  input  logic   cmd_restart,   // press -> Pikachu back to the start
+  input  logic   cmd_attack,    // press -> Pikachu jumps LEFT by MOVE pixels
+  input  logic   cmd_skill,     // unused in this starter
+  input  logic  [9:0] hcount,
+  input  logic  [9:0] vcount,
+  output logic  [7:0] red,
+  output logic  [7:0] green,
+  output logic  [7:0] blue
+);
+
+
+
+  logic  [11:0] pr_addr;
+  logic  [7:0]  prr_rom,prg_rom,prb_rom;
+
+
+
+  // RGB roms for Pikachu
+  // for each rom, 12-bit input for 64x64 pixels, 8-bit output
+  pika_rom_r prr(.clock(vga_clock), .address(pr_addr), .data_out(prr_rom));
+  // TODO: add the other two roms for g and b
+  
+  
+  
+
+
+
+  localparam int PIKA_START_X=400, PIKA_START_Y=100;
+  logic [9:0] pika_start_x, pika_start_y;
+
+
+
+  // ---------------- ROM address decode ----------------
+  always_comb begin
+    pr_addr = 0;
+    // for pikachu image
+    if (((hcount>=pika_start_x)&&(hcount<pika_start_x+64)) 
+            && ((vcount>=pika_start_y)&&(vcount<pika_start_y+64))) begin
+      
+      // TODO: get pr_addr value using vcount, hcount, pika_start_x, pika_start_y
+      pr_addr = 
+    end
+  end
+
+
+
+  // ---------------- color output ----------------
+  always_ff@(posedge vga_clock, negedge reset_n) begin
+    if (!reset_n) begin
+      {red, green, blue} <= 24'hff_ff_ff;
+    end else begin
+      // for pikachu image
+      if (((hcount>=pika_start_x)&&(hcount<pika_start_x+64)) 
+            && ((vcount>=pika_start_y)&&(vcount<pika_start_y+64)))
+        
+        // TODO
+        {red, green, blue} <= ;
+      // for background
+      else
+        //TODO
+        {red, green, blue} <= ;
+    end
+  end
+
+
+
+  // ---------------- FSM, classic three-block style ----------------
+  // Two states are enough: sitting still, or taking one jump.
+  localparam [0:0] S_IDLE = 1'b0, S_MOVE = 1'b1;
+  logic cur_state, next_state;
+
+
+
+  // ---- block 1: state register - remember where we are ----
+  always_ff@(posedge vga_clock, negedge reset_n) begin
+    if (!reset_n)
+      cur_state <= S_IDLE;
+    else
+      cur_state <= next_state;
+  end
+
+
+
+  // ---- block 2: next-state logic - decide where to go ----
+  always_comb begin
+    case (cur_state)
+			 // TODO: what is the next state, what is the transit condition?
+      S_IDLE:  next_state = ;
+      S_MOVE:  next_state = ;             
+      default: next_state = S_IDLE;
+    endcase
+  end
+
+
+
+  // ---- block 3: datapath - what happens in each state ----
+
+	localparam int MOVE = 40;     // pixels per attack(move) press
+  always_ff@(posedge vga_clock, negedge reset_n) begin
+    if (!reset_n) begin
+			 // TODO:
+      pika_start_x <= ;
+      pika_start_y <= ;
+    end else if (cmd_restart) begin
+			 // TODO: restart the location
+      pika_start_x <= ;             
+    end else if (cur_state == S_MOVE) begin
+			 // TODO: let pikachi jump left
+      pika_start_x <= ;      
+    end
+  end
+
+
+
+endmodule

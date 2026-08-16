@@ -1,0 +1,20 @@
+Fitter Status : Successful - Fri Aug 14 11:11:01 2026
+Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Revision Name : platformer
+Top-level Entity Name : top
+Family : Cyclone V
+Device : 5CSEMA5F31C6
+Timing Models : Final
+Logic utilization (in ALMs) : 1,866 / 32,070 ( 6 % )
+Total registers : 210
+Total pins : 46 / 457 ( 10 % )
+Total virtual pins : 0
+Total block memory bits : 11,088 / 4,065,280 ( < 1 % )
+Total RAM Blocks : 2 / 397 ( < 1 % )
+Total DSP Blocks : 2 / 87 ( 2 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1 / 6 ( 17 % )
+Total DLLs : 0 / 4 ( 0 % )

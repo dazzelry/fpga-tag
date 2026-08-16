@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at top.sv(17): object "VGA_CLK" differs only in case from object "vga_clk" in the same scope File: D:/Downloads/Project_VGA_start_restored/platformer_keyboard (1)_restored/platformer_keyboard_restored/top.sv Line: 17
+Warning (10268): Verilog HDL information at pattern_generator.sv(144): always construct contains both blocking and non-blocking assignments File: D:/Downloads/Project_VGA_start_restored/platformer_keyboard (1)_restored/platformer_keyboard_restored/pattern_generator.sv Line: 144

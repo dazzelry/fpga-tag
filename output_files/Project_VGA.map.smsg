@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at pattern_generator.sv(443): always construct contains both blocking and non-blocking assignments File: D:/Downloads/Project_VGA_start_restored/pattern_generator.sv Line: 443
+Info (10281): Verilog HDL Declaration information at top.sv(17): object "VGA_CLK" differs only in case from object "vga_clk" in the same scope File: D:/Downloads/Project_VGA_start_restored/top.sv Line: 17

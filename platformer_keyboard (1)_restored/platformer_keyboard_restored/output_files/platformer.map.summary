@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Fri Aug 14 11:09:54 2026
+Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Revision Name : platformer
+Top-level Entity Name : top
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 180
+Total pins : 46
+Total virtual pins : 0
+Total block memory bits : 11,088
+Total DSP Blocks : 2
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1
+Total DLLs : 0
