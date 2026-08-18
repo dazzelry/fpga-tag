@@ -430,6 +430,10 @@ end
 	 
 	 logic it_player;
 	 logic [15:0] lfsr;
+	 logic signed [10:0] t_blue_x, t_blue_y;
+	logic signed [10:0] t_red_x, t_red_y;
+	logic signed [7:0]  next_blue_dy, next_red_dy;
+	logic               blue_feet, red_feet;
 	 always_ff @(posedge vga_clock or negedge reset_n) begin
 		 if (!reset_n) begin
 			  lfsr <= 16'hACE1;
@@ -532,10 +536,7 @@ end
     end
 
 
-    // Local tracking pointers for look-ahead kinematics projection
-    logic signed [10:0] t_blue_x, t_blue_y;
-                logic signed [7:0]  next_blue_dy, next_red_dy;
-                logic               blue_feet, red_feet;
+
 					 
 					 // ============================================================
 					// SCORE TIMER
